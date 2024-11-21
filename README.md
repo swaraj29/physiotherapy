@@ -56,7 +56,6 @@ The Physiotherapy Program Builder allows physiotherapists to create personalized
     ```sh
     cd ../frontend
     npm install
-    cd ..
     ```
 
 ### Run the App
