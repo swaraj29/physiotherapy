@@ -1,0 +1,81 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Lower Body",
+      "exercises": [
+        {
+          "id": 1,
+          "name": "Knee Bends",
+          "sets": 0,
+          "reps": 0,
+          "holdTime": 0,
+          "side": "Left"
+        },
+        {
+          "id": 2,
+          "name": "Forward Lunge",
+          "sets": 0,
+          "reps": 0,
+          "holdTime": 0,
+          "side": "Right"
+        },
+        {
+          "id": 3,
+          "name": "VOXR1",
+          "sets": 0,
+          "reps": 0,
+          "holdTime": 0,
+          "side": "Left"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Upper Body",
+      "exercises": [
+        {
+          "id": 4,
+          "name": "Bicep Curl",
+          "sets": 0,
+          "reps": 0,
+          "holdTime": 0,
+          "side": "Left"
+        },
+        {
+          "id": 5,
+          "name": "Tricep Extension",
+          "sets": 0,
+          "reps": 0,
+          "holdTime": 0,
+          "side": "Right"
+        }
+      ]
+    }
+  ],
+  "programs": [
+    {
+      "id": 1,
+      "name": "Strength Training Program",
+      "exercises": [
+        {
+          "exerciseId": 1,
+          "sets": 3,
+          "reps": 12,
+          "holdTime": 30,
+          "side": "Left"
+        },
+        {
+          "exerciseId": 2,
+          "sets": 3,
+          "reps": 12,
+          "holdTime": 30,
+          "side": "Right"
+        }
+      ],
+      "days": ["M", "W", "F"],
+      "sessionsPerDay": 2,
+      "notes": "Focus on form and slow movement."
+    }
+  ]
+}

@@ -1,0 +1,289 @@
+/* Global Styles */
+body {
+  /* font-family: 'Arial', sans-serif; */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #f9fafb;
+  margin: 0;
+  padding: 0;
+  color: #333;   
+}
+
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-bottom: 20px; 
+  padding: 0 45px;
+}
+
+.tags {
+  display: flex;
+  gap: 20px; 
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tag {
+  background-color: #4CAF50;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 25px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  display: inline-block;
+}
+
+.tag:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+
+//* Add Exercise Button - Large Size */
+
+button.add-exercise {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 32px; 
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+button.add-exercise:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.exercise-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.exercise-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.input-field {
+  padding: 8px 16px;
+  font-size: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.input-field:focus {
+  outline-color: #4CAF50;
+}
+
+.side-toggle-button {
+  padding: 8px 16px;
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.3s;
+}
+
+.side-toggle-button:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05); 
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+.day-button {
+  width: 50px;
+  height: 50px;
+  margin: 8px; 
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #f3f4f6;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: background-color 0.3s, border-color 0.3s;
+  padding: 0 45px; 
+}
+
+.day-button.selected {
+  background-color: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+.day-button:hover {
+  background-color: #e5e7eb;
+}
+
+/* Buttons */
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  padding: 0 45px; 
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.button-clear {
+  background-color: #f44336;
+}
+
+.button-clear:hover {
+  background-color: #e53935;
+}
+
+
+.notes-textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+  font-size: 14px;
+  resize: vertical;
+  padding: 0 45px; 
+}
+
+.notes-textarea:focus {
+  outline-color: #4CAF50;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.program-name-input,
+.combo-selector {
+  padding: 16px;
+  font-size: 18px;
+  width: 200px; 
+}
+
+/* Clear All Button */
+.clear-all-button {
+  font-size: 16px; 
+  padding: 8px 20px; 
+  border-radius: 8px; 
+  background-color: #d7e6d8; 
+  color: white; 
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.clear-all-button {
+  font-size: 14x;
+  padding: 6px 12px;
+  border-radius: 100px;
+  background-color: #57c90b; 
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.clear-all-button:hover {
+  background-color: #e81316;
+}
+
+.program-name-input,
+.combo-selector {
+  padding: 16px;
+  font-size: 18px;
+  width: 200px; 
+}
+
+.flex {
+  display: flex;
+}
+
+.space-x-8 > * {
+  margin-right: 32px; 
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.mb-6 {
+  margin-bottom: 24px;
+}
+
+.add-exercise {
+  font-size: 1.rem;
+  padding: 10px 5px;
+  font-weight: bold; 
+  background-color: #4CAF50; 
+  color: white; 
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s; 
+}
+
+.add-exercise:hover {
+  background-color: #45a049;
+  transform: scale(1.05); 
+}
+
+
+
+
+
+
+
+
+
+
